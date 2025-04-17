@@ -1,42 +1,51 @@
-layout {
+.flex-container {
    display: flex;
-   flex-direction: column;
+   flex-flow: column wrap;
+   justify-content: center;
    align-items: center;
+   align-self: center;
    background-color: lightgray;
 }
 
-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: red;
-    color: white;
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.flex-container > header {
     background-color: darkmagenta;
     color: white;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
 }
 
-aside {
+.article-wrapper {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-flow: column wrap;
     justify-content: center;
-    background-color: darkslateblue;
-    color: white;
+    align-items: center;
+    background-color: rgb(100, 222, 100);
+    margin: 5px;
+    padding: 5px;
 }
 
-footer {
-    display: flex; 
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.article-wrapper > article {
+    background-color: rgb(232, 68, 117);
+    color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+    border: 5 px;
+}
+
+.flex-container > aside {
+    background-color: darkslateblue;
+    text-align: center;
+    color: white;
+    margin: 15px;
+    padding: 5px;
+}
+
+.flex-container > footer {
     background-color: orange;
     color: white;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
 }
