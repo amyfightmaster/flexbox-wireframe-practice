@@ -1,0 +1,1 @@
+This is an assignment for Week 1 of Module 2 for the WebDev pathway.  I set up the project in VSCode per the instructions, including adding the css reset and including the image at the root level of the project.  This was difficult, but really helped familiarize me with Flexbox and helped me see how it works.  All told, a really interesting and fun project.
