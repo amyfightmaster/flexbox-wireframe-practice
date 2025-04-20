@@ -1,0 +1,62 @@
+body {
+    padding: 40px;
+    background-color: lightgray;
+}
+
+.flex-container {
+   display: flex;
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+}
+
+header, .article-wrapper, article, aside, footer {
+    border-radius: .5rem;
+}
+
+header {
+    background-color: darkmagenta;
+    color: white;
+    text-align: center;
+    margin-bottom: 5px;
+    /* width: 20%; */
+}
+
+.article-wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(100, 222, 100);
+    /* margin: 3px; */
+    padding: 3px;
+    width: 100%;
+}
+
+.article-wrapper > article {
+    background-color: rgb(232, 68, 117);
+    color: white;
+    text-align: center;
+    margin: 2px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.flex-container > aside {
+    background-color: darkslateblue;
+    text-align: center;
+    color: white;
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+footer {
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin: 5px 0;
+    padding: 5px;
+    /* width: 20%; */
+}
