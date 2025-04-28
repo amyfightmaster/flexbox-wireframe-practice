@@ -1,6 +1,6 @@
 body {
     padding: 40px;
-    background-color: lightgray;
+    background-color: #B1B5BE;
 }
 
 .flex-container {
@@ -16,11 +16,11 @@ header, .article-wrapper, article, aside, footer {
 }
 
 header {
-    background-color: darkmagenta;
+    background-color: #9F2063;
     color: white;
     text-align: center;
     margin-bottom: 5px;
-    /* width: 20%; */
+    width: 100%;
 }
 
 .article-wrapper {
@@ -28,14 +28,14 @@ header {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: rgb(100, 222, 100);
-    /* margin: 3px; */
+    background-color: #28B47B;
+    margin: 3px;
     padding: 3px;
     width: 100%;
 }
 
 .article-wrapper > article {
-    background-color: rgb(232, 68, 117);
+    background-color: #E4195B;
     color: white;
     text-align: center;
     margin: 2px 0;
@@ -44,7 +44,7 @@ header {
 }
 
 .flex-container > aside {
-    background-color: darkslateblue;
+    background-color: #116395;
     text-align: center;
     color: white;
     margin: 5px 0;
@@ -53,10 +53,79 @@ header {
 }
 
 footer {
-    background-color: orange;
+    background-color: #E06B26;
     color: white;
     text-align: center;
     margin: 5px 0;
     padding: 5px;
-    /* width: 20%; */
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    body {
+        padding: 40px;
+        background-color: #B1B5BE;
+    }
+    
+    .flex-container {
+       display: flex;
+       flex-flow: row wrap;
+       width: 100%;
+    }
+    
+    header, .article-wrapper, article, aside, footer {
+        border-radius: .5rem;
+    }
+    
+    header {
+        background-color: #9F2063;
+        position: sticky;
+        top: 0;
+        color: white;
+        text-align: center;
+        margin-bottom: 5px;
+        width: 100%;
+    }
+    
+    .article-wrapper {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        background-color: #28B47B;
+        margin: 3px;
+        padding: 3px;
+        width: 100%;
+    }
+    
+    article {
+        background-color: #E4195B;
+        color: white;
+        text-align: center;
+        margin: 2px 0;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .flex-container > aside {
+        background-color: #116395;
+        position: sticky;
+        left: 0;
+        text-align: center;
+        color: white;
+        margin: 5px 0;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    footer {
+        background-color: #E06B26;
+        position: sticky;
+        bottom: 0;
+        color: white;
+        text-align: center;
+        margin: 5px 0;
+        padding: 5px;
+        width: 100%;
+    }
 }
